@@ -26,6 +26,9 @@ module.exports = {
     path: PATHS.build,
     filename: '[name].js'
   },
+  resolveLoader: {
+    moduleExtensions: ["-loader"]
+  },
   module: {
     loaders: [
       {
@@ -38,16 +41,16 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        exclude: /node_modules/,
-        loader: ExtractTextPlugin.extract(
-        "style",
-        "css!sass"
-        )
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          //resolve-url-loader may be chained before sass-loader if necessary
+          use: ['css-loader', 'sass-loader']
+        })
       }
     ]
   },
   plugins: [
-    new ExtractTextPlugin('stylesheet/[name].css', {allChunks: false}),
+    new ExtractTextPlugin('stylesheet/style.css'),
     new webpack.optimize.UglifyJsPlugin({
       sourceMap: true,
       compress: {

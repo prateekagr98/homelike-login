@@ -5,7 +5,6 @@ require('babel-register');
 let express 			= require('express');
 let morgan 				= require('morgan');
 let path  				= require('path');
-let bodyParser 		= require('body-parser');
 
 let server = express();
 
