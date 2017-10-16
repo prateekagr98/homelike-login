@@ -1,0 +1,22 @@
+{
+  "name": "homelike-login",
+  "version": "0.0.1",
+  "description": "Homelike Login",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prateekagr98/homelike-login.git"
+  },
+  "author": "Prateek Agarwal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prateekagr98/homelike-login/issues"
+  },
+  "homepage": "https://github.com/prateekagr98/homelike-login#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
