@@ -1,0 +1,28 @@
+.login {
+	background: url('https://app.thehomelike.com/images/login_background.jpg') center no-repeat;
+	background-size: cover;
+	height: 100vh;
+
+	&-container {
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.17);
+	}
+
+	&-heading {
+		font-weight: lighter;
+		font-size: 26px;
+	}
+
+	&-icons {
+		width: 50px;
+		margin-right: $margin-xxxl;
+		margin-left: $margin-xxxl;
+
+		&.xing {
+			width: 43px;
+		}
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}

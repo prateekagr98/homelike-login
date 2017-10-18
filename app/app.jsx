@@ -1,10 +1,12 @@
 'use strict';
 
 import React from 'react';
+import Navbar from './components/navbar';
 
-const App = () => (
+const App = (props) => (
 	<div>
-		This is the Login Page
+		<Navbar />
+		{props.children}
 	</div>
 );
 

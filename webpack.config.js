@@ -26,6 +26,9 @@ module.exports = {
     path: PATHS.build,
     filename: '[name].js'
   },
+  resolve: {
+    extensions: [".js", ".jsx"]
+  },
   resolveLoader: {
     moduleExtensions: ["-loader"]
   },
@@ -50,7 +53,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin('stylesheet/style.css'),
+    new ExtractTextPlugin('stylesheet/styles.css'),
     new webpack.optimize.UglifyJsPlugin({
       sourceMap: true,
       compress: {
