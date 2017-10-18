@@ -22,20 +22,25 @@ const SignupForm = () => (
 	  </div>
 	  <div className="form-group">
 	    <label for="user_type" className="text-secondary u-t-base">User type</label>
-	    <select className="form-control" id="user_type">
+	    <select className="form-control form-control-sm" id="user_type">
 	      <option>Private Tenant</option>
 	      <option>Apartment Owner/Tenant</option>
 	    </select>
 	  </div>
 	  <div className="form-group">
 	    <label for="language" className="text-secondary u-t-base">Language</label>
-	    <select className="form-control" id="language">
+	    <select className="form-control form-control-sm" id="language">
 	      <option>English</option>
 	      <option>Deutsch</option>
 	    </select>
 	  </div>
-	  <div className="text-right">
-	  	<button type="submit" className="btn btn-primary btn-sm">Register</button>
+	  <div className="row">
+	  	<div className="col-sm-10 u-t-base">
+	  		By clicking Register, you agree to our <a className="text-info u-no-underline" href="https://www.thehomelike.com/en/imprint-privacy-policy/">Privacy Policy</a> and <a className="text-info u-no-underline" href="https://www.thehomelike.com/en/terms-and-conditions/">Terms of Use</a>.
+	  	</div>
+	  	<div className="col-sm-2 text-right">
+	  		<button type="submit" className="btn btn-primary btn-sm">Register</button>
+	  	</div>
 	  </div>
 	</form>
 );

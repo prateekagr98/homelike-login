@@ -24,7 +24,14 @@ class Signup extends React.Component {
 		return (
 			<div className="container-fluid login pt-5">
 				<div className="card login-container w-50 p-4 mb-5">
-					<h1 className="login-heading">Register</h1>
+					<div className="row">
+						<div className="col">
+							<h1 className="login-heading">Register</h1>
+						</div>
+						<div className="col text-right u-t-base">
+							<span className="text-secondary">Already have an account?</span> <a className="text-info u-no-underline" href="/login">Login</a>
+						</div>
+					</div>
 					<SocialLogin />
 					<div className="u-seperator mt-4 mb-4 u-pos-has">
 						<div className="u-pos-m-m text-secondary">or</div>
