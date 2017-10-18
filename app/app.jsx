@@ -6,7 +6,9 @@ import Navbar from './components/navbar';
 const App = (props) => (
 	<div>
 		<Navbar />
-		{props.children}
+		<div>
+			{props.children}
+		</div>
 	</div>
 );
 

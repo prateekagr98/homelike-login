@@ -1,9 +1,12 @@
 .login {
 	background: url('https://app.thehomelike.com/images/login_background.jpg') center no-repeat;
 	background-size: cover;
-	height: 100vh;
+	height: 100%;
+	min-height: 100vh;
+	background-attachment: fixed;
 
 	&-container {
+		margin: auto;
 		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.17);
 	}
 
